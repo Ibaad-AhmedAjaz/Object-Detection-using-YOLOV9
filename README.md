@@ -30,10 +30,23 @@
 
 ## Installation
 
-Docker environment (recommended)
+Python 3.12.4 (Recommended)
 <details><summary> <b>Expand</b> </summary>
 
 ``` shell
+# clone the repository in your local system.
+git clone https://github.com/Ibaad-AhmedAjaz/Object-Detection-using-YOLOV9.git
+
+# go to code folder
+cd /yolov9
+
+# pip install required packages
+pip install seaborn thop
+pip install -r requirements.txt
+
+run the code!
+
+
 # create the docker container, you can change the share memory size if you have more.
 nvidia-docker run --name yolov9 -it -v your_coco_path/:/coco/ -v your_code_path/:/yolov9 --shm-size=64g nvcr.io/nvidia/pytorch:21.11-py3
 
@@ -41,19 +54,15 @@ nvidia-docker run --name yolov9 -it -v your_coco_path/:/coco/ -v your_code_path/
 apt update
 apt install -y zip htop screen libgl1-mesa-glx
 
-# pip install required packages
-pip install seaborn thop
 
-# go to code folder
-cd /yolov9
-pip install -r requirements.txt
 ```
 
 </details>
 
 
 ## Evaluation
-Download Any one of these below pre-trained models.
+Download Any one of these below pre-trained models and store the model in your project folder (yolov9).
+I have used gelan-c.pt pre-trained model.
 
 [`yolov9-s-converted.pt`](https://github.com/WongKinYiu/yolov9/releases/download/v0.1/yolov9-s-converted.pt) [`yolov9-m-converted.pt`](https://github.com/WongKinYiu/yolov9/releases/download/v0.1/yolov9-m-converted.pt) [`yolov9-c-converted.pt`](https://github.com/WongKinYiu/yolov9/releases/download/v0.1/yolov9-c-converted.pt) [`yolov9-e-converted.pt`](https://github.com/WongKinYiu/yolov9/releases/download/v0.1/yolov9-e-converted.pt) 
 [`yolov9-s.pt`](https://github.com/WongKinYiu/yolov9/releases/download/v0.1/yolov9-s.pt) [`yolov9-m.pt`](https://github.com/WongKinYiu/yolov9/releases/download/v0.1/yolov9-m.pt) [`yolov9-c.pt`](https://github.com/WongKinYiu/yolov9/releases/download/v0.1/yolov9-c.pt) [`yolov9-e.pt`](https://github.com/WongKinYiu/yolov9/releases/download/v0.1/yolov9-e.pt) 
