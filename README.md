@@ -3,15 +3,13 @@
 
 ## OUTPUT
 
-
 <div align="center">
     <a href="./">
-        <img src="./figure/multitask.png" width="99%"/>
+        <img src="./figure/op-1.jpg" width="49%"/>
     </a>
-</div>
-
-
-<div align="center">
+    <a href="./">
+        <img src="./figure/op-2.jpg" width="49%"/>
+    </a>
     <a href="./">
         <img src="./figure/op-3.jpg" width="49%"/>
     </a>
@@ -21,6 +19,12 @@
 <div align="center">
     <a href="./">
         <img src="./figure/horses_prediction.jpg" width="49%"/>
+    </a>
+</div>
+
+<div align="center">
+    <a href="./">
+        <img src="./figure/multitask.png" width="99%"/>
     </a>
 </div>
 
